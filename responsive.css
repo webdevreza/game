@@ -139,6 +139,15 @@
     gap: 0.5rem;
     border: 2px solid var(--color-primary);
   }
+  /* footer */
+  .footer-category-nav .nav-list {
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .footer-navigation .nav-lists {
+    gap: 40px;
+    flex-wrap: wrap;
+  }
 }
 /* Mobile Devices max-width 576px*/
 @media only screen and (max-width: 36em) {
@@ -210,5 +219,16 @@
   .career-list .career-list-item span {
     font-size: 18px;
     line-height: 32px;
+  }
+  /* footer */
+  .footer-category-nav .nav-list {
+    gap: 4.5rem;
+  }
+  .footer-navigation .nav-lists {
+    gap: 4.5rem;
+  }
+  .footer-social {
+    flex-wrap: wrap;
+    gap: 6.5rem;
   }
 }
