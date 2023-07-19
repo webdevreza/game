@@ -1,0 +1,111 @@
+/* Tablet Devices (Landscape) max-width 992px */
+@media only screen and (max-width: 62em) {
+  .header-container {
+    padding: 0 2rem;
+  }
+  .hero-right {
+    padding-left: 0;
+  }
+}
+/* Tablet Devices (Port-rate) max-width 768px */
+@media only screen and (max-width: 48em) {
+  .header-container {
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 5rem;
+  }
+
+  /* about-section */
+  .about-section {
+    margin-bottom: 16rem;
+  }
+  .about-container {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about-left .about-img {
+    margin: 3.5rem 0;
+    max-width: 100%;
+  }
+  .about-right {
+    text-align: center;
+    padding: 0 20px;
+  }
+  .quote .quote-text {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+  /* hero */
+  .hero-container {
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .hero-right {
+    padding-left: 0;
+  }
+  .hero-left .hero-title {
+    font-size: 3.8rem;
+  }
+  .hero-left .hero-title span {
+    font-size: 75px;
+    line-height: 8rem;
+  }
+  .hero-left {
+    padding: 7rem 0;
+    position: relative;
+  }
+  .hero-left::before {
+    content: "";
+    position: absolute;
+    left: -20%;
+    top: 0;
+    width: 120%;
+    height: 100%;
+    background-image: url(img/bg-shape.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
+  .header-hero {
+    background-image: none;
+  }
+}
+/* Mobile Devices max-width 576px*/
+@media only screen and (max-width: 36em) {
+  :root {
+    --sec-padding-big: 12rem 0;
+  }
+  .section-title {
+    font-size: 4rem;
+  }
+  /* menu-bar */
+  .header-menu-bar {
+    box-shadow: none;
+  }
+  .header-container {
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10rem;
+    padding-bottom: 7.8rem;
+    gap: 6.2rem;
+  }
+  .nav .nav-list .list-item:last-child {
+    margin-top: 2.6rem;
+  }
+  .nav .nav-list {
+    justify-content: center;
+    flex-direction: column;
+    gap: 3.6rem;
+  }
+  /* hero */
+  .hero-left {
+    padding: var(--sec-padding-big);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-image: url(img/bg-shape.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
+}
