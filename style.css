@@ -244,9 +244,9 @@ Header section
   max-width: 71rem;
 }
 
-/* ========
+/* ===============
 About section
-======== */
+================== */
 .about-container {
   display: flex;
   justify-content: space-between;
@@ -281,4 +281,73 @@ About section
   font-size: 3.2rem;
   font-weight: 700;
   line-height: 4.5rem;
+}
+
+/* ===============
+Features section
+================== */
+.feature-section {
+  padding: var(--sec-padding-medium);
+}
+.feature-container {
+}
+.feature-container .section-title,
+.feature-container .section-paragraph {
+  text-align: center;
+}
+
+.features {
+  margin-top: 4.8rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+}
+.feature-item {
+  flex: 1;
+}
+.feature-item-img {
+  position: relative;
+}
+.feature-item-img img {
+}
+
+.feature-item-img .feature-item-img-hover {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.feature-item-img:hover .feature-item-img-hover {
+  height: 100%;
+  z-index: 2;
+  opacity: 1;
+  visibility: visible;
+}
+.feature-item-img .feature-item-img-hover img {
+}
+
+.feature-item-img .feature-item-img-hover span {
+  color: var(--color-primary);
+  font-size: 2rem;
+  font-weight: 600;
+}
+.feature-item-title {
+  margin-top: 2.4rem;
+  color: var(--color-dark-2);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3rem;
 }
