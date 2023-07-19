@@ -125,6 +125,20 @@
   .career-img img {
     max-width: 100%;
   }
+  /* category section */
+  .category-container {
+    gap: 20px;
+  }
+  .category-btn span {
+    font-size: 16px;
+  }
+  .category-btn img {
+    width: 30px;
+  }
+  .category-btn {
+    gap: 0.5rem;
+    border: 2px solid var(--color-primary);
+  }
 }
 /* Mobile Devices max-width 576px*/
 @media only screen and (max-width: 36em) {
