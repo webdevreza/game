@@ -112,9 +112,11 @@
   .play-container-left-img .play-text .section-title {
     padding: 0px;
     text-align: center;
+    margin: 2.4rem auto;
   }
   .play-container-left-img .play-text .section-paragraph {
     padding: 0px;
+    text-align: center;
   }
   /* career section */
   .career-container {
