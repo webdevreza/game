@@ -98,6 +98,9 @@ img {
   line-height: 5.6rem;
   font-weight: 700;
 }
+.section-title .color-primary {
+  color: var(--color-primary);
+}
 .section-title .gradient {
   background-image: var(--color-gradient-1);
   background-clip: text;
@@ -289,13 +292,10 @@ Features section
 .feature-section {
   padding: var(--sec-padding-medium);
 }
-.feature-container {
-}
 .feature-container .section-title,
 .feature-container .section-paragraph {
   text-align: center;
 }
-
 .features {
   margin-top: 4.8rem;
   display: flex;
@@ -308,9 +308,6 @@ Features section
 .feature-item-img {
   position: relative;
 }
-.feature-item-img img {
-}
-
 .feature-item-img .feature-item-img-hover {
   position: absolute;
   left: 0;
@@ -329,16 +326,12 @@ Features section
   opacity: 0;
   visibility: hidden;
 }
-
 .feature-item-img:hover .feature-item-img-hover {
   height: 100%;
   z-index: 2;
   opacity: 1;
   visibility: visible;
 }
-.feature-item-img .feature-item-img-hover img {
-}
-
 .feature-item-img .feature-item-img-hover span {
   color: var(--color-primary);
   font-size: 2rem;
@@ -350,4 +343,54 @@ Features section
   font-size: 2rem;
   font-weight: 500;
   line-height: 3rem;
+}
+
+/* PLay section */
+.play-section {
+  padding-bottom: 19.5rem;
+}
+.play-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 26.5rem;
+}
+.play-container.play-container-left-img {
+  justify-content: start;
+  padding-top: 180px;
+}
+.play-text {
+  text-align: right;
+}
+.play-container-left-img .play-text {
+  text-align: left;
+}
+.play-text .section-title {
+  max-width: 35rem;
+  margin-bottom: 2.4rem;
+}
+.play-text .section-paragraph {
+  max-width: 35rem;
+}
+.play-container-left-img .play-text .section-title {
+  max-width: 42.6rem;
+}
+.play-container-left-img .play-text .section-paragraph {
+  max-width: 48.3rem;
+}
+.play-img {
+  position: relative;
+}
+.play-img .main-img {
+}
+
+.play-img .secondary-img {
+  position: absolute;
+  left: -14.5rem;
+  bottom: -7.5rem;
+}
+
+.play-container.play-container-left-img .play-img .secondary-img {
+  left: auto;
+  right: -14.5rem;
 }
