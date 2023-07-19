@@ -62,10 +62,11 @@ img {
 }
 .btn {
   display: inline-block;
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 600;
   line-height: 1;
   text-align: center;
+  text-transform: uppercase;
   padding: 2rem 4rem;
   border-radius: 4.8rem;
   cursor: pointer;
@@ -88,6 +89,9 @@ img {
 .btn-light {
   background-color: var(--color-light-1);
   color: var(--color-primary);
+}
+.btn-light:hover {
+  transform: scale(1.1);
 }
 .container {
   max-width: var(--conatiner-width);
@@ -345,7 +349,9 @@ Features section
   line-height: 3rem;
 }
 
-/* PLay section */
+/* ===============
+play section
+================== */
 .play-section {
   padding-bottom: 19.5rem;
 }
@@ -381,16 +387,52 @@ Features section
 .play-img {
   position: relative;
 }
-.play-img .main-img {
-}
-
 .play-img .secondary-img {
   position: absolute;
   left: -14.5rem;
   bottom: -7.5rem;
 }
-
 .play-container.play-container-left-img .play-img .secondary-img {
   left: auto;
   right: -14.5rem;
+}
+
+/* ===============
+Career section
+================== */
+.career-section {
+  background-color: var(--color-primary);
+  color: var(--color-light-1);
+}
+.career-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.career-text {
+  max-width: 68rem;
+  padding: var(--sec-padding-medium);
+}
+.career-text .section-title {
+  margin-bottom: 2.4rem;
+}
+.career-text .section-paragraph {
+  color: var(--color-light-1);
+  margin-bottom: 3.2rem;
+}
+.career-list {
+  margin-bottom: 4rem;
+}
+.career-list .career-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+.career-list .career-list-item span {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.career-img {
+}
+.career-img img {
 }

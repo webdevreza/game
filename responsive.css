@@ -88,6 +88,9 @@
   .play-text {
     text-align: center;
   }
+  .play-text .section-title {
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  }
   .play-img .main-img {
     max-width: 72%;
     margin-left: auto;
@@ -112,6 +115,15 @@
   }
   .play-container-left-img .play-text .section-paragraph {
     padding: 0px;
+  }
+  /* career section */
+  .career-container {
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .career-img img {
+    max-width: 100%;
   }
 }
 /* Mobile Devices max-width 576px*/
@@ -171,5 +183,18 @@
   }
   .play-container-left-img .play-text .section-paragraph {
     padding: 0 30px;
+  }
+  /* career section */
+  .career-text {
+    padding: 60px 0;
+  }
+  .career-list .career-list-item {
+    flex-direction: column;
+    border-bottom: 1px solid #fff6;
+    padding-bottom: 10px;
+  }
+  .career-list .career-list-item span {
+    font-size: 18px;
+    line-height: 32px;
   }
 }
